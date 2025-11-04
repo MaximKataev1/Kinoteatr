@@ -128,7 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Afisha.cs" />
-    <Compile Include="Models\Kinoteatr.cs" />
+    <Compile Include="Models\KinoteatrModel.cs" />
     <Compile Include="Pages\Afisha.xaml.cs">
       <DependentUpon>Afisha.xaml</DependentUpon>
     </Compile>

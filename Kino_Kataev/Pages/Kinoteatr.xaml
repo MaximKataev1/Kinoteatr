@@ -18,9 +18,9 @@
             <TextBox x:Name="txtName" Width="150" Margin="5" Text="Название"/>
             <TextBox x:Name="txtZal" Width="100" Margin="5" Text="Кол-во залов"/>
             <TextBox x:Name="txtCount" Width="100" Margin="5" Text="Кол-во мест"/>
-            <Button Content="Добавить" Click="Add_Click" Margin="5"/>
-            <Button Content="Редактировать" Click="Edit_Click" Margin="5"/>
-            <Button Content="Удалить" Click="Delete_Click" Margin="5"/>
+            <Button Content="Добавить" Click="Add" Margin="5"/>
+            <Button Content="Редактировать" Click="Edit" Margin="5"/>
+            <Button Content="Удалить" Click="Delete" Margin="5"/>
         </StackPanel>
 
         <DataGrid x:Name="dgKinoteatr" Grid.Row="1" AutoGenerateColumns="False" SelectionMode="Single">
