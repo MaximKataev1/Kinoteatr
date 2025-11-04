@@ -8,7 +8,28 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Kinoteatr">
 
-    <Grid>
-        
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+            <TextBox x:Name="txtName" Width="150" Margin="5" Text="Название"/>
+            <TextBox x:Name="txtZal" Width="100" Margin="5" Text="Кол-во залов"/>
+            <TextBox x:Name="txtCount" Width="100" Margin="5" Text="Кол-во мест"/>
+            <Button Content="Добавить" Click="Add_Click" Margin="5"/>
+            <Button Content="Редактировать" Click="Edit_Click" Margin="5"/>
+            <Button Content="Удалить" Click="Delete_Click" Margin="5"/>
+        </StackPanel>
+
+        <DataGrid x:Name="dgKinoteatr" Grid.Row="1" AutoGenerateColumns="False" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="Auto"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding name}" Width="*"/>
+                <DataGridTextColumn Header="Залы" Binding="{Binding count_zal}" Width="Auto"/>
+                <DataGridTextColumn Header="Места" Binding="{Binding count}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
