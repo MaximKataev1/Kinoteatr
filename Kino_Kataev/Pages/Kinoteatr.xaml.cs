@@ -17,6 +17,7 @@ namespace Kino_Kataev.Pages
             SetPlaceholder(txtName, "Название");
             SetPlaceholder(txtZal, "Кол-во залов");
             SetPlaceholder(txtCount, "Кол-во мест");
+            LoadData();
         }
 
         private void SetPlaceholder(TextBox textBox, string placeholderText)

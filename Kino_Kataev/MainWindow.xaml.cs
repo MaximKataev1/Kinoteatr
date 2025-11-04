@@ -31,12 +31,12 @@ namespace Kino_Kataev
 
         private void gotoAfishas(object sender, RoutedEventArgs e)
         {
-            OpenPages(Pages.kinoteatr);
+            OpenPages(Pages.afisha);
         }
 
         private void gotoKinoteatr(object sender, RoutedEventArgs e)
         {
-            OpenPages(Pages.afisha);
+            OpenPages(Pages.kinoteatr);
         }
     }
 }

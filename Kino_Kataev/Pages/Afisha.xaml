@@ -19,9 +19,9 @@
             <ComboBox x:Name="cbKino" Width="150" Margin="5" DisplayMemberPath="name" SelectedValuePath="id"/>
             <DatePicker x:Name="dpTime" Width="150" Margin="5"/>
             <TextBox x:Name="txtPrice" Width="100" Margin="5" Text="Цена"/>
-            <Button Content="Добавить" Click="Add_Click" Margin="5"/>
-            <Button Content="Редактировать" Click="Edit_Click" Margin="5"/>
-            <Button Content="Удалить" Click="Delete_Click" Margin="5"/>
+            <Button Content="Добавить" Click="Add" Margin="5"/>
+            <Button Content="Редактировать" Click="Edit" Margin="5"/>
+            <Button Content="Удалить" Click="Delete" Margin="5"/>
         </StackPanel>
 
         <DataGrid x:Name="dgAfisha" Grid.Row="1" AutoGenerateColumns="False">
